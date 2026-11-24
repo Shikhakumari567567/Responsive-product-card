@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Choose a flexible plan for your next big idea."
+    />
+    <title>Plans &amp; Pricing — Northstar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Northstar home">
+          <span class="brand-mark" aria-hidden="true">✳</span>
+          northstar
+        </a>
+        <a class="topbar-link" href="#plans">See plans <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section class="pricing" id="plans" aria-labelledby="page-title">
+        <div class="intro">
+          <p class="eyebrow"><span aria-hidden="true"></span> SIMPLE, HONEST PRICING</p>
+          <h1 id="page-title">The right plan for<br />what’s <span>next.</span></h1>
+          <p class="intro-copy">
+            Big ideas deserve room to grow. Pick a plan that fits today, and
+            change it whenever you’re ready.
+          </p>
+
+          <div class="billing-control" role="group" aria-label="Billing period">
+            <button class="billing-option is-active" type="button" data-period="monthly" aria-pressed="true">
+              Monthly
+            </button>
+            <button class="billing-option" type="button" data-period="yearly" aria-pressed="false">
+              Yearly <span class="save-note">SAVE 25%</span>
+            </button>
+          </div>
+          <p class="billing-caption" id="billing-caption" aria-live="polite">
+            Flexible monthly billing. No surprises.
+          </p>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan-card">
+            <div class="plan-heading">
+              <span class="plan-icon icon-sprout" aria-hidden="true">↗</span>
+              <h2>Launch</h2>
+              <p class="plan-description">A fresh start for your next big thing.</p>
+            </div>
+            <div class="price-block">
+              <p class="price-line"><span class="currency">$</span><span class="price" data-monthly="0" data-yearly="0">0</span><span class="price-period">/ month</span></p>
+              <p class="price-detail">Free forever</p>
+            </div>
+            <a class="plan-cta cta-light" href="mailto:hello@northstar.example?subject=Launch%20plan">Get started <span aria-hidden="true">→</span></a>
+            <div class="feature-list">
+              <p class="feature-label">THE ESSENTIALS</p>
+              <ul>
+                <li><span aria-hidden="true">✓</span> 1 project</li>
+                <li><span aria-hidden="true">✓</span> Core planning tools</li>
+                <li><span aria-hidden="true">✓</span> Community support</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card plan-card-featured">
+            <span class="ribbon ribbon-popular">POPULAR</span>
+            <div class="plan-heading">
+              <span class="plan-icon icon-orbit" aria-hidden="true">✳</span>
+              <h2>Momentum</h2>
+              <p class="plan-description">For the ideas you’re ready to chase.</p>
+            </div>
+            <div class="price-block">
+              <p class="price-line"><span class="currency">$</span><span class="price" data-monthly="24" data-yearly="18">24</span><span class="price-period">/ month</span></p>
+              <p class="price-detail" data-monthly-detail="Billed monthly" data-yearly-detail="Billed $216 yearly">Billed monthly</p>
+            </div>
+            <a class="plan-cta cta-dark" href="mailto:hello@northstar.example?subject=Momentum%20plan">Choose Momentum <span aria-hidden="true">→</span></a>
+            <div class="feature-list">
+              <p class="feature-label">EVERYTHING IN LAUNCH, PLUS</p>
+              <ul>
+                <li><span aria-hidden="true">✓</span> Unlimited projects</li>
+                <li><span aria-hidden="true">✓</span> Advanced insights</li>
+                <li><span aria-hidden="true">✓</span> Priority support</li>
+                <li><span aria-hidden="true">✓</span> Invite up to 5 teammates</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="plan-card">
+            <span class="ribbon ribbon-value">BEST VALUE</span>
+            <div class="plan-heading">
+              <span class="plan-icon icon-comet" aria-hidden="true">✦</span>
+              <h2>Orbit</h2>
+              <p class="plan-description">More room to make your mark together.</p>
+            </div>
+            <div class="price-block">
+              <p class="price-line"><span class="currency">$</span><span class="price" data-monthly="48" data-yearly="36">48</span><span class="price-period">/ month</span></p>
+              <p class="price-detail" data-monthly-detail="Billed monthly" data-yearly-detail="Billed $432 yearly">Billed monthly</p>
+            </div>
+            <a class="plan-cta cta-light" href="mailto:hello@northstar.example?subject=Orbit%20plan">Choose Orbit <span aria-hidden="true">→</span></a>
+            <div class="feature-list">
+              <p class="feature-label">EVERYTHING IN MOMENTUM, PLUS</p>
+              <ul>
+                <li><span aria-hidden="true">✓</span> Unlimited teammates</li>
+                <li><span aria-hidden="true">✓</span> Shared workspaces</li>
+                <li><span aria-hidden="true">✓</span> Personal onboarding</li>
+                <li><span aria-hidden="true">✓</span> Early access to new tools</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <footer class="pricing-footer">
+          <span>✳ Thoughtful tools for people going places.</span>
+          <span>All plans include a little room to dream.</span>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
